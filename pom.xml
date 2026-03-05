@@ -28,6 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<openapi-generator-version>7.4.0</openapi-generator-version> <!-- Añadida la versión de OpenAPI y la dependencia + abajo -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -51,6 +52,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openapitools</groupId>
+			<artifactId>openapi-generator-maven-plugin</artifactId>
+			<version>${openapi-generator-version}</version>
 		</dependency>
 	</dependencies>
 
