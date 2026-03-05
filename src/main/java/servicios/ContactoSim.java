@@ -43,7 +43,15 @@ public class ContactoSim implements InterfazContactoSim {
     }
 
     @Override
-    public boolean isValidEntityId() {
-        return true;
+    public boolean isValidEntityId(int id) {
+        boolean isValid = false;
+        int i = 0;
+        while (!isValid && i < entidades.size()) {
+            if (entidades.get(i).getId() == id) {
+                isValid = true;
+            }
+            i++;
+        }
+        return isValid;
     }
 }

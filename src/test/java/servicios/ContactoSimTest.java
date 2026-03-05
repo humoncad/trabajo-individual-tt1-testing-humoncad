@@ -50,6 +50,7 @@ class ContactoSimTest {
 
     @Test
     void isValidEntityId() {
-        assertTrue(contactoSim.isValidEntityId());
+        assertTrue(contactoSim.isValidEntityId(3));
+        assertFalse(contactoSim.isValidEntityId(5));
     }
 }
